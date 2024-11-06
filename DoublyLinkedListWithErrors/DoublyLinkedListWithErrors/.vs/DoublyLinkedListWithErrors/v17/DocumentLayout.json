@@ -1,0 +1,66 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\molly\\Desktop\\Wintec Y3 S1\\SoftwareTesting-COMP707\\Assessment5\\Assessment5Git\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8A96D9B2-C0A0-48B2-A32D-8498ACDC1A01}|DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors.csproj|c:\\users\\molly\\desktop\\wintec y3 s1\\softwaretesting-comp707\\assessment5\\assessment5git\\doublylinkedlistwitherrors\\doublylinkedlistwitherrors\\doublylinkedlistwitherrors\\dllnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A96D9B2-C0A0-48B2-A32D-8498ACDC1A01}|DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors.csproj|solutionrelative:doublylinkedlistwitherrors\\dllnode.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8A96D9B2-C0A0-48B2-A32D-8498ACDC1A01}|DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors.csproj|c:\\users\\molly\\desktop\\wintec y3 s1\\softwaretesting-comp707\\assessment5\\assessment5git\\doublylinkedlistwitherrors\\doublylinkedlistwitherrors\\doublylinkedlistwitherrors\\dllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8A96D9B2-C0A0-48B2-A32D-8498ACDC1A01}|DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors.csproj|solutionrelative:doublylinkedlistwitherrors\\dllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 358,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DLLNode.cs",
+              "DocumentMoniker": "C:\\Users\\molly\\Desktop\\Wintec Y3 S1\\SoftwareTesting-COMP707\\Assessment5\\Assessment5Git\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DLLNode.cs",
+              "RelativeDocumentMoniker": "DoublyLinkedListWithErrors\\DLLNode.cs",
+              "ToolTip": "C:\\Users\\molly\\Desktop\\Wintec Y3 S1\\SoftwareTesting-COMP707\\Assessment5\\Assessment5Git\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DLLNode.cs",
+              "RelativeToolTip": "DoublyLinkedListWithErrors\\DLLNode.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwCIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:55:35.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DLList.cs",
+              "DocumentMoniker": "C:\\Users\\molly\\Desktop\\Wintec Y3 S1\\SoftwareTesting-COMP707\\Assessment5\\Assessment5Git\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DLList.cs",
+              "RelativeDocumentMoniker": "DoublyLinkedListWithErrors\\DLList.cs",
+              "ToolTip": "C:\\Users\\molly\\Desktop\\Wintec Y3 S1\\SoftwareTesting-COMP707\\Assessment5\\Assessment5Git\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DoublyLinkedListWithErrors\\DLList.cs",
+              "RelativeToolTip": "DoublyLinkedListWithErrors\\DLList.cs",
+              "ViewState": "AgIAAJcAAAAAAAAAAAAowJ4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T21:51:38.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,24 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace DoublyLinkedListWithErrors
+﻿namespace DoublyLinkedListWithErrors
 {
-   public class DLList
+    public class DLList
     {
         public DLLNode head; // pointer to the head of the list
         public DLLNode tail; // pointer to the tail of the list
-       public DLList() { head = null;  tail = null; } // constructor
-        /*-------------------------------------------------------------------
-        * The methods below includes several errors. Your  task is to write
-        * unit test to discover these errors. During delivery the tutor may
-        * add or remove errors to adjust the scale of the effort required by
-        */
+        public DLList() { head = null; tail = null; } // constructor
+
+
+        // This method will add a node to the tail of the list.
         public void addToTail(DLLNode p)
         {
-
             if (head == null)
             {
                 head = p;
@@ -26,12 +17,21 @@ namespace DoublyLinkedListWithErrors
             }
             else
             {
-                tail.next = p;
-                tail = p;
-                p.previous = tail;
-            }
-        } // end of addToTail
+                // ORIGINAL CODE
+                // New node previous needs to be the old tail first, moved up in order.
+                // tail.next = p;
+                // tail = p;
+                // p.previous = tail;
 
+                tail.next = p;
+                p.previous = tail;
+                tail = p;
+            }
+        } // addToTail method complete
+
+
+        // This method will add a node to head of the list
+        // No errors to correct.
         public void addToHead(DLLNode p)
         {
             if (head == null)
@@ -45,43 +45,78 @@ namespace DoublyLinkedListWithErrors
                 this.head.previous = p;
                 head = p;
             }
-        } // end of addToHead
+        } // addToHead method complete
 
-        public void removHead()
+
+        //This method will remove the head node from the list.
+        public void removeHead()//FIXED: typo, remov to remove
         {
-            if (this.head == null) return;
-            this.head = this.head.next;
-            this.head.previous = null;
-        } // removeHead
+            if (this.head == null)//Added in new code so return into nested brackets.
+            {
+                return;
+            }//End of code I added in
+            if (this.head == this.tail) //Added in new code: Check if there was only one node in the list .
+            {
+                this.head = null;
+                this.tail = null;
+            } //End of code I added in
+            else
+            {
+                this.head = this.head.next;
+                this.head.previous = null;
+            }
+        } // removeHead method complete
 
+
+        // Remove the tail node from the list.
         public void removeTail()
         {
-            if (this.tail == null) return;
+            if (this.tail == null) //Added in code to move return into nested brackets.
+            {
+                return;
+            }//End of code I added in
             if (this.head == this.tail)
             {
                 this.head = null;
                 this.tail = null;
-                return;
             }
-        } // remove tail
+            else //Added in code to check for multi-node list.
+            {
+                this.tail = this.tail.previous;
+                this.tail.next = null;
+            } //End of code I added in
+        } // removeTail method complete
 
-        /*-------------------------------------------------
-         * Return null if the string does not exist.
-         * ----------------------------------------------*/
+
+        // Search method will look for a specified node
         public DLLNode search(int num)
         {
             DLLNode p = head;
             while (p != null)
             {
+                // Original code:
+                // moved p = p.next below if statement
+                // {
+                //      p = p.next;
+                //      if (p.num == num) break;
+                // }
+                if (p.num == num)
+                {
+                    return p;
+                }
                 p = p.next;
-                if (p.num == num) break;
             }
-            return (p);
-        } // end of search (return pionter to the node);
+            return null; //FIXED: if the num is not found, return null
+        } // search method complete
 
+
+        // Remove a node from a list, for empty, singular, or multi-node list.
         public void removeNode(DLLNode p)
-        { // removing the node p.
-
+        {
+            if (head == null) //Added in code to test for empty list, nothing else changed.
+            {
+                return;
+            } //End of code I added in
             if (p.next == null)
             {
                 this.tail = this.tail.previous;
@@ -101,8 +136,10 @@ namespace DoublyLinkedListWithErrors
             p.next = null;
             p.previous = null;
             return;
-        } // end of remove a node
+        } // removeNode method complete
 
+
+        // Calculate the total of the nodes in the list
         public int total()
         {
             DLLNode p = head;
@@ -110,9 +147,12 @@ namespace DoublyLinkedListWithErrors
             while (p != null)
             {
                 tot += p.num;
-                p = p.next.next;
+                // Original code
+                // FIXED: removed extra .next
+                // p = p.next.next;
+                p = p.next;
             }
             return (tot);
-        } // end of total
+        } // total method complete.
     } // end of DLList class
 }
